@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.front-icon{
+   display: flex;
+   justify-content: flex-start;
+  
+}
+ 
+
+span{
+   font-size: 20px;
+   font-weight: 800;
+
+}
+ 
+ .header{
+    background-color: rgb(248, 232, 217);
+    border-bottom: rgb(252,196,124);
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    /* width: 100vw; */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 20px rgb(252,196,124);
+ }
+ .navigation ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+ }
+ .navigation ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    
+ }
+ .navigation ul li a:hover{
+    color: red;
+    background-color: orange;
+
+ }
+ .side-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+ }
+ .side-icon a i{
+    color: black;
+    margin: 0 20px;
+}
+.baricon label{
+    display: none;
+}
+#check{
+    display: none;
+}
+/* home-section */
+#home{
+   background-color: rgb(248, 232, 217); 
+   position: relative;
+}
+
+#home .main-side .side1  h1 span{
+   color: red;
+   font-size: 40px;
+   font-weight: 900;
+   border-bottom: 2px solid gold;
+
+ }
+ .main-side .side1 h1{
+   font-size: 40px ;
+   text-transform: capitalize;
+ }
+ .side2 img{
+   height: 400px;
+   width: 400px;
+   border-radius: 50%;
+   padding-top: 30px;
+ }
+ .red-btn{
+   font-size: 24px;
+   background-color: red;
+   color: white;
+   margin-top: 70px;
+   cursor: pointer;
+   box-shadow: 0 5px 5px 0 gray;
+
+ }
+ .red-btn:hover{
+   background-color: brown;
+ }
+ .main-side{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+ }
+ .main-side .side1{
+   text-align: start;
+   margin-left: 1%;
+   width: 40%;
+
+ }
+
+  #home .container {
+   height: 40%;
+   width:80%;
+   border: 2px solid white;
+   margin: auto;
+   border-radius: 20px;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 300px;
+   background-color: white;
+   position: relative;
+   
+  }
+  .container .item{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+
+  }
+  
+
+  .container img{
+   height: 100px;
+   width: 100px;
+
+   
+  }
+  .container .item{
+   width: 80%;
+  }
+  .button button{
+   font-size: 20px;
+   font-weight: 500;
+   padding: 5px;
+   background-color: orange;
+   color:white;
+   border: 3px solid orange;
+   cursor: pointer;
+   box-shadow: 5px 2px 2px 2px  rgba(255, 165, 0 ,0.5);
+   
+   
+  }
+  .button button:hover{
+   background-color: white;
+   color: orange;
+   transition: 0.5s;
+  }
+
+  .middle-section .thali img{
+   height: 350px;
+   width: 350px;
+   border-radius: 50%;
+   box-shadow: 5px 5px 5px 5px rgba(128, 128, 128,0.5)
+
+  }
+  .middle-section{
+   display: flex ;
+   justify-content: space-around;
+   flex-wrap: wrap-reverse;
+   /* align-items: center; */
+
+   /* grid-template-columns: 1fr 0.5fr;
+   justify-content: center; */
+
+  }
+  .about-thali{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-right: 30px;
+   
+  }
+  
+  .thali{
+   margin-left: 150px;
+  }
+  .about-thali .heading1 h3::before{
+   content: '';
+   display: inline-block;
+   background-image:url(/download.jpg);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 10px;
+   width :10px;
+   border-radius: 50%;
+   padding: 5px;
+   margin-right: 5px;
+  
+  
+   }
+   .about-thali .heading2 h3::before{
+      content: '';
+      display: inline-block;
+      background-image:url(/dosa.jpg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 10px;
+      width : 10px;
+      border-radius:40%;
+     padding: 7px;
+     margin-right: 5px;
+     
+     
+      }
+      .about-thali .heading3 h3::before{
+         content: '';
+         display: inline-block;
+         background-image:url(/noodles.jpg);
+         background-size: contain;
+         background-position: center;
+         background-repeat: no-repeat;
+         height: 10px;
+         width : 10px;
+         border-radius:40%;
+        padding: 7px;
+        margin-right: 5px;
+       
+
+      }
+   .about-thali .heading1 h4{
+      margin-bottom: 10px;
+   }
+   .about-thali p{
+      margin-left: 27px;
+   }
+
+   .card{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 100px;
+   }
+   
+
+  .food-cards{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: nowrap;
+
+   width: 70%;
+   margin: auto;
+   margin-top: 50px;
+   
+  
+   
+
+  }
+  .food-card{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border: 2px solid white;
+   margin: 10px;
+   align-items: center;
+   background-color: white;
+   position: relative;
+   top: 100px;
+   z-index: 200;
+
+   
+
+  }
+  .food-card h3{
+   text-align: center;
+  }
+  .food-card p{
+   text-align: center;
+   font-size: 16px;
+   line-height: 20px;
+   margin: 20px 0;
+
+  }
+  .food-cards img{
+   height: 150px;
+   width: 150px;
+   border-radius: 50% ;
+
+  }
+  .big-box{
+   height: 300px;
+   width: 85%;
+   border: 2px soild black;
+   background-color:rgba(252,196,124,0.5);
+   margin: auto;
+   border-radius: 5px;
+   margin-bottom: 20px;
+   position: relative;
+   margin-top: -100px;
+  }
+
+ 
+ @media screen and (max-width:768px){
+  
+    .baricon label {
+        display: block;
+    }
+
+ .navigation ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    background-color: rgb(248, 232, 217);
+    position: absolute;
+    display: none;
+    top: 80px;
+    left:0%;
+ }
+ .navigation ul li a:hover{
+   color:red;
+   border-bottom: 2px solid rgb(158, 63, 63);
+   
+ }
+ header .navigation ul li{
+   background-color: burlywood;
+   width: 100%;
+   
+ }
+ header .navigation ul li a{
+   font-size: 24px;
+ }
+
+ 
+
+ #click:checked ~  header .header .navigation ul{
+    display:block;    
+
+ }
+ .item3{
+   position: absolute;
+   top:50%;
+   left:7%;
+   width: 100%;
+
+ }
+ #home .container{
+   height: 600px;
+ }
+ .item2{
+   position: relative;
+   left: 90%
+ }
+  #home .main-side .side2{
+   position: absolute;
+   left:1% ;
+   top :0%
+  }
+  #home .main-side .side2 img{
+   height: 350px;
+   width: 350px;
+   border-radius: 50%;
+   padding-top: 30px;
+
+  }
+  #home .main-side .side1{
+   position: relative;
+   left:25%;
+   
+  }
+
+}
+ 
+ 
